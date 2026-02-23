@@ -1,0 +1,22 @@
+{
+  "name": "quanta-voice-agent",
+  "version": "1.0.0",
+  "description": "Quanta AI Lab — Inbound Voice Lead Qualification Agent powered by ElevenLabs + Twilio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["voice-agent", "elevenlabs", "twilio", "lead-qualification"],
+  "author": "Quanta AI Lab",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}
