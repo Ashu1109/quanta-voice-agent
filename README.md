@@ -1,3 +1,17 @@
+CREATE TABLE public.leads (
+  id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  created_at timestamp with time zone DEFAULT timezone('utc'::text, now()) NOT NULL,
+  full_name text,
+  email text,
+  company text,
+  use_case text,
+  budget text,
+  timeline text,
+  raw_transcript jsonb,
+  call_duration_sec integer,
+  call_status text
+);
+
 # Quanta AI Lab — Inbound Voice Lead Qualification Agent
 
 AI-powered phone agent that answers inbound calls 24/7, qualifies leads via natural conversation, and routes data to your CRM, database, and Slack in real time.
